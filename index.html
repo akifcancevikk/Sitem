@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styl2.css">
+    </head>
+    <body>
+
+        <div class="header">
+            <h1>İlk Sitem</h1>
+        
+        </div>
+
+        <ul>
+            <li class="dropdown" style="float: center">
+                <a href="javascript:void(0)" class="dropbtn"  >Menü</a>
+                  <div class="dropdown-content">
+                      <a href="counters.html" target="_blank" >counters dersi</a>
+                      <a href="#sayfa2" >Imdb</a>
+                      <a href="#sayfa3" >Karegen</a>
+                  </div>
+              </li>
+            <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+            <li><a href="https://www.imdb.com/" target="_blank">Imdb</a></li>
+            <li><a href="https://www.karegen.com/" target="_blank">Karegen</a></li>
+            <li><a href="#geri">Geri Bildirim</a></li>
+            
+        </ul>
+
+        
+
+        <div class="row">
+            <div class="leftcolumn">
+
+                <div class="card">
+                    <h2>Youtube</h2>
+                    
+                    <div class="fakeimg"  ><img src="img/youtube.png" style="width:300px;height:170px;"  ></div>
+                    
+                    <p><a href="https://www.youtube.com/" target="_blank">Youtube</a>, Google'a ait bir Amerikan çevrimiçi video paylaşım ve sosyal medya platformudur. Merkezi San Bruno, Kaliforniya'da olan platform, 15 Şubat 2005'te 3 eski PayPal çalışanı tarafından kurulmuştur.</p>
+                </div>
+
+                <div class="card">
+                    <h2 id="sayfa2">Imdb</h2>
+                    
+                    <div class="fakeimg" style="height:200px;"><img src="img/imdb.png" style="width:300px;height:170px;" ></div>
+                    
+                    <p><a href="https://www.imdb.com/" target="_blank">Imdb</a>, filmler, diziler, televizyon programları, video oyunları ve internet içerikleri hakkında bilgiler barındıran çevrimiçi bir bilgi bankasıdır. Sinema ve televizyon yapımları hakkında oyuncu kadrosu, yapım ekibi, biyografiler, özetler, ilginç bilgiler, puanlar ve eleştiriler gibi bilgileri içerir.</p>
+                </div>
+
+                <div class="card">
+                    <h2 id="sayfa3">Karegen</h2>
+                    
+                    <div class="fakeimg" ><img src="img/karegen.jpg" style="width:300px;height:170px;" ></div>
+                    
+                    <p>1998 yılında internet bilişim sektöründe faaliyete geçen şirketimiz, 2002 yılında “Karegen Bilişim LTD” ticari unvanını alarak internet üzerinde yeni yazılımlar üretmeye başlamıştır. Karegen Ltd 2003 yılından itibaren Karegen.com web sayfası aracılığıyla dünya çapında Domain, Web Hosting ve SSL kaydı gerçekleştirmektedir.</p>
+                </div>
+
+            </div>
+            <div class="rightcolumn">
+
+                <div class="card">
+                    <h2>Hakkında</h2>
+                    <div class="fakeimg" style="height:100px;"></div>
+                    
+                </div>
+
+                <div class="card">
+                    <h3>Popüler Haberler</h3>
+                    <div class="fakeimg" ><a href="https://www.ntv.com.tr/galeri/dunya/dunyanin-ilk-ucan-otomobilini-test-edecek-gonulluler-araniyor,4Yrj4MynOk60bP4r3vMItw/YSO0obQ2iU-0AbxWlIYa2w" target="_blank"><img src="img/uçan.webp" style="width:220px;height:110px;"  ></a></div>
+                    <div class="fakeimg" ><a href="https://www.dunya.com/ekonomi/borsada-yuzde-035-dusus-haberi-665941" target="_blank"><img src="img/borsa.webp" style="width:220px;height:110px;" ></a></div>
+                    <div class="fakeimg" ><a href="https://www.ntv.com.tr/galeri/dunya/fransayi-asiri-sicaklar-vurdu-tekneler-karaya-oturdu,ZhsutOrvBU6IRxeQ4ylciQ/ZoBhx3fYf0e6CLS0DUmMsA" target="_blank"><img src="img/tekne.webp" style="width:220px;height:110px;" ></a></div>
+                </div>
+
+                <div class="card">
+
+                    <form action="/action_page.php">
+                        <h3 id="geri">Geri bildirim!</h3>
+                        <label for="fname">İsim Soyisim</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="İsim ve soyisim giriniz..."><br>
+                        
+                        <input type="text" id="fname" name="fname" value="" size="30" placeholder="Sitemizi geliştirmek için geribildirimde bulunun."><br><br>
+                        
+
+                        
+                      </form> 
+                      <button onclick="myFunction2()">Gönder</button>
+                        <script>
+                            function myFunction2() {
+                            alert("Geri bildiriminiz gönderildi!");
+                            location.reload()
+                            }
+                            
+                        </script>
+
+
+                    
+                </div>
+
+                <div class="card">
+                    <form action="/action_page.php">
+                        <h3 id="geri">Sitemizden memnun kaldınız mı?</h3>
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                        <label for="html">Memnun kaldım.</label><br>
+                        <input type="radio" id="css" name="fav_language" value="CSS">
+                        <label for="css">Memnun kalmadım.</label><br>
+
+                        
+                    
+                      </form>
+                      <button onclick="myFunction()">Gönder</button>
+                        <script>
+                            function myFunction() {
+                              alert("Memnuniyetiniz gönderildi!");
+                              location.reload()
+                            }
+                            </script>
+                   
+                        
+                </div>
+
+            </div>
+            </div>
+
+            <div class="footer">              
+                         
+                    <div class="col-1">
+                        <h3>Kullanışlı Linkler</h3>
+                        <a href="">a</a>
+                        <a href="">b</a>
+                        <a href="">c</a>
+                        <a href="">d</a>
+                    </div>    
+                    
+                    <div class="col-2">
+                        <h3>Newsletter</h3>
+                        <form action="">
+                            <input type="email" placeholder="Email" required><br>
+                            <button type="submit"> Üye Olun</button>
+                        </form>
+                    </div> 
+                    
+                    <div class="col-3">
+                        <h3>İletişim</h3>
+                        <p>123, xyz, qwe</p>
+                        
+                    </div>  
+
+
+            </div>  
+                          
+        </div>
+
+    </body>
+</html>
+
+
+
